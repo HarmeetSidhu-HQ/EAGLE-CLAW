@@ -617,22 +617,10 @@ export function EagleClawHero() {
         {/* Headline */}
         <h1 className="font-display text-center leading-[0.95] headline-glow pointer-events-auto select-none">
           <span
-            className="block text-[56px] md:text-[96px] text-white animate-entrance delay-1000"
+            className="block text-[40px] md:text-[64px] text-white animate-entrance delay-1000 bg-gradient-to-br from-white via-white to-[#ffcd75] bg-clip-text text-transparent"
             id="headline-line-1"
           >
-            YOUR SILENCE
-          </span>
-          <span
-            className="block text-[56px] md:text-[96px] text-white animate-entrance delay-1150"
-            id="headline-line-2"
-          >
-            CANNOT BE
-          </span>
-          <span
-            className="block text-[56px] md:text-[96px] text-white animate-entrance delay-1300"
-            id="headline-line-3"
-          >
-            FORCED.
+            TRUTH CANNOT BE BURIED.
           </span>
         </h1>
 

@@ -3,14 +3,14 @@ import { Bebas_Neue, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
 const bebasNeue = Bebas_Neue({
-  variable: "--font-bebas-neue",
+  variable: "--font-display",
   weight: "400",
   subsets: ["latin"],
   display: "swap",
 });
 
 const ibmPlexMono = IBM_Plex_Mono({
-  variable: "--font-ibm-plex-mono",
+  variable: "--font-mono",
   weight: ["300", "400", "500"],
   subsets: ["latin"],
   display: "swap",
@@ -19,20 +19,19 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "EAGLE CLAW — Decentralized Dead-Man's Switch",
   description:
-    "A cryptographic dead-man's switch for journalists, activists, and whistleblowers. Built on Solana and IPFS. If you disappear, the truth doesn't.",
+    "A cryptographic dead-man's switch on Solana. If you go silent, the truth doesn't. Protect your assets, messages, and secrets with zero-trust automation.",
+  keywords: "dead man switch, solana, decentralized, crypto inheritance, whistleblower, journalist protection",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
       lang="en"
-      className={`${bebasNeue.variable} ${ibmPlexMono.variable} h-full antialiased`}
+      className={`${bebasNeue.variable} ${ibmPlexMono.variable}`}
     >
-      <body className="min-h-full flex flex-col bg-[#0a0a0b]">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
