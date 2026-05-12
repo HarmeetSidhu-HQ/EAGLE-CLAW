@@ -1,0 +1,12 @@
+{
+    "servers": {
+        "encore-local": {
+            "args": [
+                "mcp",
+                "run",
+                "--app=eagle-claw-84vi"
+            ],
+            "command": "encore"
+        }
+    }
+}
